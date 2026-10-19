@@ -1,0 +1,10 @@
+extends: vm7-extends-member-source-261019
+
+pull_request_rules:
+  - name: VM7 target-local approved deployment merge 261019
+    conditions:
+      - base = vm7-extends-member-sensitive-261019
+      - files = deploy-vm7-extends-member.sh
+    actions:
+      merge:
+        method: merge
